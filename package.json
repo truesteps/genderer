@@ -1,0 +1,14 @@
+{
+	"name": "genderer",
+	"version": "1.0.0",
+	"main": "./src/index.js",
+	"repository": "https://github.com/truesteps/genderer.git",
+	"license": "MIT",
+	"scripts": {
+		"start": "node ./src/index"
+	},
+	"dependencies": {
+		"brain.js": "^1.6.1",
+		"sqlite3": "^4.0.9"
+	}
+}

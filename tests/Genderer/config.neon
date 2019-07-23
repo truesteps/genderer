@@ -1,3 +1,0 @@
-genderer:
-	dsn: sqlite:../../src/Genderer/names.db3
-	driver: Haltuf\Genderer\Connection
