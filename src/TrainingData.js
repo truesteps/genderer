@@ -44,6 +44,7 @@ module.exports =class TrainingData {
 		return new Promise((resolve, reject) => {
 			this.db.all(`SELECT *
 			             FROM firstname
+			             ORDER BY random()
 			             LIMIT 500`, (err, rows) => {
 				if (err) {
 					reject(err);
