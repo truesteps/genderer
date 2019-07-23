@@ -7,7 +7,9 @@ const lstm = new brain.recurrent.LSTM();
 data.getTrainingData()
 	.then((results) => {
 		lstm.train(results, {
-			iterations: 1000,
+			iterations: 1000,   // maximum training iterations
+			log: true,           // console.log() progress periodically
+			logPeriod: 10,       // number of iterations between logging
 		});
 
 		data.saveTrainingData(lstm);
